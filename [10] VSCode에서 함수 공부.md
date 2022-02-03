@@ -81,7 +81,24 @@ os.mkdir('lib2')
 os.rename('lib2', 'lib3')
 ```
 
+## 4. 파일 복사하기 `shutil` 
 
+- 파일을 복사해주는 파이썬 모듈
+- 동일한 파일 이름이 있을 경우에는 덮어쓴다.
+- src 파일을 dstFh 복사하기
 
+```python
+import shutil
+shutil.copy('src.txt', 'dst.txt')
+```
 
+## 5. 디렉토리에 있는 파일 이름 모두 알기 `glob(pathname)`
+
+- 디렉토리에 있는 파일들을 리스트로 만들기
+
+```python
+import glob
+glob.glob('파일경로/mark*') 
+# 파일 이름이 mark로 시작하는 파일을 모두 찾아서 읽어들이기
+```
 
